@@ -35,6 +35,7 @@ def finalized():
 		return jsonify({"error": str(e)}), 400
 	
 
+# DEPOIS arrumar essa rota
 @app.route('/orders', methods=['GET'])
 def orders():
 	try:
@@ -55,6 +56,6 @@ if __name__ == '__main__':
 	app.run(
 		host="0.0.0.0",
 		port=5000,
-		debug=True,
+		debug=False,
 		use_reloader=False
 	)
